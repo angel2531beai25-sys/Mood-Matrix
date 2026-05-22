@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMatrix</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_file_project.css">
+    
+    <audio id="success-sound">
+        <source src="https://www.soundjay.com/buttons/sounds/button-3.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="fail-sound">
+        <source src="https://www.soundjay.com/buttons/sounds/button-10.mp3" type="audio/mpeg">
+    </audio>
+
+    
+
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">MoodMatrix</h2>
+    </nav>
+
+    <section class="hero">
+        <h1>How are you feeling today?</h1>
+        <p>!!!!! Select your mood !!!!!</p>
+    </section>
+
+    <section class="mood-section">
+        <div class="mood-grid">
+            <a href="happy.html" class="mood-card">😊 <span>Happy</span></a>
+            <a href="sad.html" class="mood-card">😔 <span>Sad</span></a>
+            <a href="stress.html" class="mood-card">😣 <span>Stressed</span></a>
+            <a href="excited.html" class="mood-card">🤩 <span>Excited</span></a>
+            <a href="tried.html" class="mood-card">😴 <span>Tired</span></a>
+        </div>
+    </section>
+    <section class="dashboard">
+
+
+        <br><br>
+
+        
+
+
+<section class="tracker-section">
+
+    <div class="glass-card">
+
+        <h2>Daily Wellness Tracker</h2>
+
+        <p id="water-text">
+            Water Intake: 0 ml
+        </p>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="water-progress"></div>
+        </div>
+
+        <button id="add-water">
+            Add Water 💧
+        </button>
+
+        <br><br>
+
+        <p id="calorie-text">
+            Calories: 0
+        </p>
+
+        <div class="progress-container">
+            <div class="progress-bar red-bar" id="calorie-progress"></div>
+        </div>
+
+        <button id="add-calories">
+            Add Calories 🍔
+        </button>
+
+        <br><br>
+
+        <button id="reset-btn">
+            Reset Tracker
+        </button>
+
+        <h3 id="tip-box"></h3>
+
+    </div>
+    <br><br>
+
+    <div class="glass-card">
+
+    <h2>Player Progress 🎮</h2>
+
+<p id="level-text">
+    Level: 1
+</p>
+
+<p id="xp-text">
+    XP: 0 / 100
+</p>
+
+<div class="progress-container">
+    <div class="progress-bar xp-bar" id="xp-progress"></div>
+</div>
+
+</section>
+
+<br><br>
+<div class="glass-card">
+
+            <h2>Daily Streak 🔥</h2>
+
+            <p id="streak-box">
+                Streak: 0 Days
+            </p>
+        <br><br>
+
+        <div class="glass-card">
+
+            <div class="suggestion-box">
+
+                <h2>Smart Suggestions 💡</h2>
+
+                <p id="smart-suggestion">
+                    Start your healthy journey today!
+                </p>
+
+            </div>
+            <br>
+        </div>
+
+        <br><br>
+
+        <div class="glass-card">
+
+            <div class="leaderboard">
+
+                <h2>Leaderboard 🏆</h2>
+
+                <ul id="leaderboard-list">
+
+                    <li>Angel — Level 1</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <br><br>
+
+<div id="achievement-box"></div>
+    <section class="result hidden">
+        <div class="glass-card">
+            <h2>Your Mood Result</h2>
+            <h3>Click a mood to see suggestions 💡</h3>
+            <button id="refresh-btn">Try Again</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; MoodMatrix || Copy Right Section 234</p>
+    </footer>
+
+    <script src="scprit.js"></script>
+
+</body>
+</html>
